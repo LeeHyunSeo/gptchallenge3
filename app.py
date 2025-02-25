@@ -173,3 +173,4 @@ if api_key :
             | RunnableLambda(choose_answer)
         )
         result = chain.invoke(query)
+        st.markdown(result.content)
